@@ -1,0 +1,8 @@
+<import src="./Template/footer.wxml"></import>
+<view class="app-home">
+  <home-page></home-page>
+  <block wx:for="{{ music }}" wx:key="{{ item.id }}">
+    <home-listbar type="{{ item.id }}" data="{{ item.objects_point }}"></home-listbar>
+  </block>
+  <template name="footer"></template>
+</view>

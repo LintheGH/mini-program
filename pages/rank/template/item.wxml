@@ -1,0 +1,6 @@
+<template name="left-box">
+  <view class="left-box">
+    <view class="album"></view>
+    <view class="rank-list"></view>
+  </view>
+</template>

@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 812962 */
+  src: url('//at.alicdn.com/t/font_812962_8quh4dulpj4.eot');
+  src: url('//at.alicdn.com/t/font_812962_8quh4dulpj4.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_812962_8quh4dulpj4.woff') format('woff'),
+  url('//at.alicdn.com/t/font_812962_8quh4dulpj4.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_812962_8quh4dulpj4.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-dynmenucommentsselected:before { content: "\e60a"; }
+
+.icon-boshiweb_bofangliang:before { content: "\e62f"; }
+
+.icon-arrow-r:before { content: "\e788"; }
+
+.icon-renqi:before { content: "\e6a5"; }
+
+.home-listbar {
+  margin: 20rpx 0;
+  padding: 0 28rpx;
+}
+.list-bar-title {
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.title-left {
+  text-align: center;
+  font-size: 32rpx;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.title-icon {
+  width: 40rpx;
+  height: 40rpx;
+  background-image: url(https://static.missevan.com/assets/m/images/build/sprite-icons-catalog@2x.1144a958.png);
+  margin-right:10rpx;
+  background-size: 172rpx 172rpx;
+  background-position: -44rpx 0;
+}
+.title-right {
+  max-width: 132rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #9e9e9e;
+  display: flex;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.list-item {
+  width: 212rpx;
+}
+.pic-wrap {
+  width: 212rpx;
+  height: 212rpx;
+}
+.pic-wrap image {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  width: 100%;
+  height: 72rpx;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 36rpx;
+  margin: 8rpx 0;
+  color: #616161;
+  font-size: 26rpx;
+}
+.play {
+  display: flex;
+  justify-content: space-between
+}
+.play-left, .comment{
+  display: flex;
+  font-size: 22rpx;
+  line-height: 22rpx;
+  color: #bdbdbd;
+}
+.arrow-r {
+  background-image: url(https://static.missevan.com/assets/m/images/build/sprite-icons@2x.c620c1c1.png);
+  background-position: -482rpx -574rpx;
+  background-size: 730rpx 644rpx;
+}
+
+.channel-list-item {
+  width: 320rpx;
+  height: 300rpx;
+  position: relative;
+}
+.channel-pic-wrap {
+  width: 100%;
+  height: 212rpx;
+}
+.channel-pic-wrap image {
+  width: 100%;
+  height: 100%;
+}
+.channel-title {
+  margin-top: 6rpx;
+  width: 100%;
+  height: 80rpx;
+  word-break: break-all;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  box-orient: vertical;
+  line-clamp: 2;
+  line-height: 40rpx;
+  color: #616161;
+    font-size: 26rpx;
+}
+.follow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear,left top,right top,from(transparent),to(rgba(0,0,0,.2)));
+  background-image: linear-gradient(90deg,transparent,rgba(0,0,0,.2));
+  width: 160rpx;
+  height: 40rpx;
+  padding: 0 10rpx;
+  text-align: right;
+  -webkit-border-top-right-radius: 8rpx;
+  -moz-border-radius-topright: 8rpx;
+  border-top-right-radius: 8rpx;
+}
+.follow-num {
+  float:right;
+  display: inline-block;
+  position: relative;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding-left: 36rpx;
+  color: #fff;
+  font-size: 24rpx;
+  text-shadow: 0 2rpx 2rpx rgba(0,0,0,.7);
+}
+.follow-num:before {
+  content: "";
+  position: absolute;
+  top: 8rpx;
+  left: 0;
+  width: 30rpx;
+  height: 26rpx;
+  background-image: url(https://static.missevan.com/assets/m/images/build/sprite-icons-thumbnails@2x.f1c29abf.png);
+  background-position: -36rpx -52rpx;
+  background-size: 112rpx 110rpx;
+}

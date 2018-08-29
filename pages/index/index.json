@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "home-page": "Components/HomePage3/homepage",
+    "home-listbar": "Components/ListBar/listbar"
+  }
+}

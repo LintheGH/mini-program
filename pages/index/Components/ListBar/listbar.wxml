@@ -1,0 +1,18 @@
+<import src="../../Template/list.wxml"></import>
+<view class="home-listbar">
+  <view class="list-bar-title">
+    <view class="title-left">
+      <view style="background-position:{{type_info.icon.x}}rpx {{type_info.icon.y}}rpx" class="title-icon"></view>
+      <text style="display: inline-block;magin-left: 10rpx" class="content">{{ title || type_info.title }}</text>
+    </view>
+    <navigator url="{{ type_info.link || '../catalogs/catalogs' }}" class="title-right">
+      <text style="margin-right: 10rpx" class="content">{{ type_info.type !== 'channel' ? '更多': '排行榜'}}</text>
+      <text class="iconfont icon-arrow-r"></text>
+    </navigator>
+  </view>
+  <view class="list">
+    <block wx:for="{{ data }}" wx:key="index">
+      <template is="{{ type_info.type !== 'channel' ? 'normal-item' : 'channel-item' }}" data="{{ item: item }}" wx:if="{{ index < (type_info.type === 'normal' ? 3 : 4) }}"></template>
+    </block>
+  </view>
+</view>

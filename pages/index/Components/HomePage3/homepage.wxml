@@ -1,0 +1,5 @@
+<view class="home-page3">
+  <home-banner bannerList="{{bannerList}}"></home-banner>
+  <home-list type="sound" data="{{sound}}"></home-list>
+  <home-channel type="channel" data="{{ channel }}"></home-channel>
+</view>

@@ -1,0 +1,34 @@
+<template name="normal-item">
+  <view class="list-item">
+    <view class="pic-wrap">
+      <image src="{{'https://static.missevan.com/coversmini/' + item.cover_image}}" />
+    </view>
+    <view class="title">{{ item.soundstr}}</view>
+    <view class="play">
+      <view class="play-left">
+        <text class="iconfont icon-boshiweb_bofangliang"></text>
+        <view style="margin-left: 10rpx" class="number">{{ item.view_count_formatted || item.view_count }}</view>
+      </view>
+      <view class="comment">
+        <text class="iconfont icon-dynmenucommentsselected"></text>
+        <view style="margin-left: 10rpx" class="number">{{ item.comment_count }}</view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<template name="channel-item">
+  <view class="channel-list-item">
+    <view class="channel-pic-wrap">
+      <image src="{{ item.bigpic }}" />
+    </view>
+    <view class="channel-title">
+      {{ item.name }}
+    </view>
+    <view class="follow">
+      <view class="follow-num">
+        {{ item.follow_num }}
+      </view>
+    </view>
+  </view>
+</template>

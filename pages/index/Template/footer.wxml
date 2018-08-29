@@ -1,0 +1,12 @@
+<template name="footer">
+  <view class="footer">
+    <view class="content">
+      <view class="button">客户端</view>
+      <view class="logo"></view>
+      <view class="button">返回顶部</view>
+    </view>
+    <view class="bottom">
+      MissEvan弹幕音频网 京ICP备:14055174号-1
+    </view>
+  </view>
+</template>

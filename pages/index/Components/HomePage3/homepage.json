@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "home-banner": "../Banner/banner",
+    "home-list": "../ListBar/listbar",
+    "home-channel": "../ListBar/listbar"
+  }
+}
