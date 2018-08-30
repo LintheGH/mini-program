@@ -1,3 +1,8 @@
+<import src="./template/item.wxml"></import>
 <view class="rank">
   <view class="sub-header">排行榜</view>
-</view>
+  <block wx:for="{{ albumList }}" wx:key="index">
+    <template data="{{ item: item }}" is="album"></template>
+  </block>
+  
+</view> 

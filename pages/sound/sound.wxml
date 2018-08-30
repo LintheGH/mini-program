@@ -1,0 +1,6 @@
+<view class="sound">
+  <view class="soundPlayer">
+    <view class="record-disk"></view>
+    <view class="play-button"></view>
+  </view>
+</view>

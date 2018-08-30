@@ -1,0 +1,33 @@
+<view class="album">
+  <view class="album-wall">
+    <view class="wall-bg">
+      <image src="{{ albumList.album.front_cover }}" />
+    </view>
+    <view class="album-bg">
+      <image src="{{ albumList.album.front_cover }}" />
+    </view>
+    <view class="album-info">
+      <view class="album-title">{{ albumList.album.title }}</view>
+      <view class="owner">
+        <view class="pic-wrap">
+          <image src="{{ albumList.owner.avatar2 }}" />
+        </view>
+        <view class="owner-author">{{ albumList.owner.username }}</view>
+      </view>
+    </view>
+  </view>
+  <block wx:for="{{ albumList.sounds }}" wx:key="{{ item.id }}">
+    <view id="{{ item.id }}" bindtap="toSound" class="list-item">
+      <view class="cover-wrap">
+        <image src="{{ item.front_cover }}" />
+      </view>
+      <view class="item-info">
+        <view class="item-title">{{ item.soundstr }}</view>
+        <view class="play-info">
+          <view class="play-num">{{ item.view_count_formatted }}</view>
+          <view class="time">{{ time[index] }}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
