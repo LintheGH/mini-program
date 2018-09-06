@@ -1,6 +1,11 @@
 <view class="sound">
   <view class="soundPlayer">
-    <view class="record-disk"></view>
-    <view class="play-button"></view>
+    <view class="record-disk">
+      <image src="{{ sound.front_cover }}" />
+    </view>
+    <view class="play-button">
+      <view class="btn-icon"></view>
+    </view>
   </view>
+  <progress percent="{{ percent }}" stroke-width="3" activeColor="#e63c3c" backgroundColor="#b2b2b2" active="{{true}}"/>
 </view>

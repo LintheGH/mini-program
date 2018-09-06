@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    sound: {}
+    sound: {},
+    percent: 0
   },
   getSound (id) {
     request({
@@ -23,7 +24,7 @@ Page({
   creatAudio (src) {
     const radio = wx.createInnerAudioContext()
     radio.src = src
-    radio.autoplay = true
+    radio.autoplay = false
     return radio
   },
   controlAudio (radio) {

@@ -1,15 +1,16 @@
 {
   "pages": [
+    
     "pages/rank/rank",
     "pages/index/index",
     "pages/classify/classify",
     "pages/music-list/music-list",
     "pages/index/Components/ListBar/listbar",
     "pages/catalogs/catalogs",
-    
+    "pages/sound/sound",
     "pages/channels/channels",
-    "pages/album/album",
-    "pages/sound/sound"
+    "pages/album/album"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
